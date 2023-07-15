@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!-- 
+    Tag head é a primeira coisa que o browser vai carregar. Por isso as tags meta e estilos (tag style) precisa vir aqui dentro. 
+  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 02</title>
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 
+      Seletores
+        ID 
+          Utilizar um unicoID por elemento
+        Classe
+          Classes podem ser repitidas em mais de um elemento
+        Tags
+
+      Preferencia de seletores
+        Inline
+        ID
+        Class
+        Tags
+        Ao passar o mouse em cima, é possível ver o grau de importância que o sistema dá para cada seletor.
+        No caso de seletores iguais, a preferência é do seletor que está mais para baixo do código. Caso seja usado mais de uma classe na mesma tag, não importa a sequência de classes digitadas na tag, o browser vai renderizar continuando olhando a sequência no style.css.
+
+    */
+
+    .quadrado {
+      border: 1px solid black;
+      width: 100px;
+    }
+
+    .circle {
+      /* border-radius: 50px; */
+      height: 50px;
+      width: 50px;
+      /* margin-top: 5px; */
+      /* margin-bottom: 5px; */
+      /* padding: 25px; */
+      /* margin: 25px; */
+
+      margin: 1px 5px 10px 20px;
+    }
+    .red {
+      background: red;
+    }
+    .green {
+      background: green;
+    }
+    .yellow {
+      background: yellow;
+    }
+
+    
+
+    .text{
+      /* background-color: black; */
+      color: black;
+      text-align: left;
+      text-decoration: overline dashed;
+      /* pode colocar varias propriedades dentro do text-decoration. */
+      /* text-transform: uppercase; */
+      /* text-transform: capitalize; */
+      /* text-indent: 50px; espaço do parágrafo */
+      letter-spacing: 2px; /* aumenta espaço entre as letras */
+      word-spacing: 10px; /* aumenta espaço entre palavras */
+      /* line-height: 2;  */
+      text-align: justify;
+    }
+
+    .teste{
+      width: 200px;
+    }
+
+  </style>
+</head>
+<body>
+  <main>
+    <div class="quadrado">
+      <div class="circle red"></div>
+      <div class="circle yellow"></div>
+      <div class="circle green"></div>
+    </div>
+
+    <div class="teste">
+      <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquam, est iste harum sapiente iusto a tenetur vero, beatae qui dolor inventore, eveniet suscipit nisi repellendus aut iure magni consectetur!</p>
+    </div>
+  </main>
+</body>
+</html>
