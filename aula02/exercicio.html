@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Tabela</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid rgb(182, 181, 181);
+      padding: 10px;
+      text-align: center;
+    }
+
+    .price td:nth-child(n+2) {
+      color: white;
+      font-size: 150%;
+      font-weight: bold;
+    }
+
+    button {
+      border: none;
+      color: white;
+      cursor: pointer;
+      padding: 10px 25px;
+    }
+
+    .no-border {
+      border: none;
+    }
+
+    .bg-light {
+      background-color: #7ebff2;
+    }
+    .bg-middle {
+      background-color: #4a87ec;
+    }
+    .bg-strong {
+      background-color: #7073ec;
+    }
+  </style>
+
+
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th class="no-border"></th>
+        <th>Básico</th>
+        <th>Padrão</th>
+        <th>Avançado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="price">
+        <td>Preço Mensal</td>
+        <td class="bg-light">R$ 29</td>
+        <td class="bg-middle">R$ 59</td>
+        <td class="bg-strong">R$ 139</td>
+      </tr>
+      <tr>
+        <td>Comercial</td>
+        <td>1 usuário completo</td>
+        <td>5 usuários completos</td>
+        <td>Usuários personalizados</td>
+      </tr>
+      <tr>
+        <td>Usuários ilimitados somente leitura</td>
+        <td>1.000 visualizações de email</td>
+        <td>2.000 visualizações de email</td>
+        <td>Visualizações de email personalizadas</td>
+      </tr>
+      <tr>
+        <td>Contatos</td>
+        <td>5 contatos por cliente</td>
+        <td>25 contatos por cliente</td>
+        <td>Contatos ilimitados</td>
+      </tr>
+      <tr>
+        <td>Café</td>
+        <td>5 xícaras</td>
+        <td>8 xícaras</td>
+        <td>10 xícaras</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button class="bg-light">Escolha o plano</button></td>
+        <td><button class="bg-middle">Escolha o plano</button></td>
+        <td><button class="bg-strong">Escolha o plano</button></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
