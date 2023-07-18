@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post</title>
+  <!-- 
+    Métodos HTTP
+      Post -> Criar - para enviar informações. Estou criando um dado no banco de dados / inserindo um dado novo
+      Get -> Busar - para buscar informações / quero pegar alguma coisa no banco de dados
+      Put -> Modificar - é quando eu quero modificar algum dado
+      Delete -> Deletar - deletar um dado do banco de dados
+      Patch -> Modificar apenas uma propriedade
+   -->
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    main {
+      border: 1px solid black;
+      display: block;
+      padding: 20px;
+      width: 500px;
+      margin: auto;
+    }
+
+    input {
+      margin-bottom: 10px;
+      padding: 10px 20px;
+      width: 100%;
+    }
+
+    .button-legal {
+      background: pink;
+      display: block;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form id="formulario">
+    <!-- <form action="http://localhost:5000/criarUsuario" method="post"> -->
+      <!-- Dificilmente vou utilizar esse action e esse method utilizando um framework -->
+      <div class="margin-bottom">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div class="margin-bottom">
+        <label for="senha">Password</label>
+        <input type="password" name="senha" id="senha">
+      </div>
+
+      <button type="submit" class="button-legal">Enviar</button>
+      <!-- com o button como submit, ele vai enviar o formulario. Ao enviar, o site é redirecionado para o endereço em action -->
+    </form>
+  </main>
+
+  <script>
+    document.querySelector("#formulario")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+      var email = document.querySelector("#email").value;
+      var senha = document.querySelector("#senha").value;
+
+      let dados = {
+        email: email,
+        senha: senha
+      }
+      console.log('dados:', dados);
+
+      const data = JSON.stringify(dados);
+      console.log('dados em JSON: ', data);
+      localStorage.setItem("dadosFormulario", data);
+
+      // para retornar para objeto -> const data2 = JSON.parse(data);
+      })
+
+  </script>
+</body>
+
+</html>

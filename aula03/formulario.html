@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+
+  <style>
+    .margim-bottom {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <form>
+      <fieldset class="margim-bottom">
+        <!-- fieldset agrupa um cj de inputs com significado semantico e também altera estilização -->
+        <legend>Dados Pessoais</legend>
+        <div class="margim-bottom">
+          <label for="nome">Nome</label>
+          <input type="text" name="nome" id="nome" placeholder="nome">
+        </div>
+        <div class="margim-bottom">
+          <label for="email">Email</label>
+          <input name="email" id="email" type="email" placeholder="email">
+        </div>
+
+        <div class="margim-bottom">
+          <label for="password">Senha</label>
+          <input type="password" required name="password" id="password">
+        </div>
+
+        <div class="margim-bottom">
+          <label for="cidade">Cidade</label>
+          <select name="cidade" id="cidade" required>
+            <option value="" disabled selected>Selecione sua cidade</option>
+            <optgroup label="São Paulo">
+              <!-- optgroup é para ajudar a formatar as opções do select em sub grupos -->
+              <option value="SP">São Paulo</option>
+              <option value="SA">Santo André</option>
+              <option value="SB">São Bernardo</option>
+              <option value="SC">São Caetano</option>
+            </optgroup>
+            <optgroup label="Paraná">
+              <option value="MA">Maringa</option>
+              <option value="LN">Londrina</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div>
+          <label for="comentario">Comentario:</label>
+          <textarea 
+            style="resize: none;"
+            name="comentario" 
+            id="comentario" 
+            cols="30" 
+            rows="10"
+            maxlength="200"
+            minlength="0"
+          ></textarea>
+        </div>
+
+        <label for="aceito-termos">Aceito os termos e condições!</label>
+        <input type="checkbox" name="aceito-termos" id="aceito-termos">
+      </fieldset>
+
+      <fieldset>
+        <div class="margim-bottom">
+          <label for="cor">Cor favotira</label>
+          <input type="color" name="cor" id="cor">
+        </div>
+
+        <div class="margim-bottom">
+          <label for="data-nasc">Nascimento</label>
+          <input type="date" name="data-nasc" id="data-nasc">
+        </div>
+
+        <div class="margim-bottom">
+          <label for="numero-sorte">Número da Sorte</label>
+          <input type="number" name="numero-sorte" id="numero-sorte">
+        </div>
+
+        <div class="margim-bottom">
+          <div>
+            <label for="">
+              <input type="radio" name="tipo-comida">
+              Café da manhã
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="radio" name="tipo-comida">
+              Almoço
+            </label>
+          </div>
+          <div>
+            <label for="">
+              <input type="radio" name="tipo-comida">
+              Janta
+            </label>
+          </div>
+        </div>
+
+        <button>Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+</body>
+
+</html>

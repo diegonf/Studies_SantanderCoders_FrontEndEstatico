@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <form>
+    <!-- <div>
+      <label>Input text</label>
+    </div> -->
+    <input type="text" placeholder="teste" value="Diego" required id="nome" name="nome" maxlength="8" minlength="2" >
+    <!-- outros => readonly e disabled -->
+    <!-- atributo name -> ao enviar o formulário, ele cria uma espécie de ojeto, sendo o valor atribuído em name o valor do key do objeto -->
+
+    <input type="password" placeholder="Senha" aria-describedby="password-help">
+    <p id="password-help">Minha senha tem que ter pelo menos 5 letras e 1 número</p>
+    <!-- atributos começando com aria são para acessibilidade -->
+
+    <input type="email">
+
+    <input type="number" min="0" max="10"/>
+    
+    <input type="checkbox">
+    <input type="checkbox" checked value="segundoTaChecado">
+    <!-- Esse value do checkbox é o que será enviado no form quando ele estiver checado -->
+
+    <input type="radio" name="p" id="">
+    <input type="radio" name="p" id="">
+    <!-- deixar o mesmo nome nos radios de mesmo grupo -->
+    <!-- ele pode retornar true or false ou pode retornar o value, caso seja indicado -->
+    
+    <input type="date" name="" id="" min="2023-01-01" max="2024-01-01">
+
+    <input type="file" name="" id="" accept="image/png">
+
+    <input type="color" name="" id="">
+
+    <input type="range" name="" id="" min="0" max="100" step="5">
+
+    <button>Enviar</button>
+  </form>
+</body>
+</html>
+
+<!-- 
+  TAGs de formulario
+  1 - form
+  2 - input
+  3 - label
+  4 - select
+  5 - option
+  6 - button
+  7 - optgroup
+  8 - textarea
+  9 - legend
+  10 - fieldset
+
+  Tipos de input
+  1 - text
+  2 - number
+  3 - password
+  4 - email
+  5 - date
+  6 - color
+  7 - range
+  8 - checkbox
+  9 - url
+  10 - file
+  11 - radio
+ -->
