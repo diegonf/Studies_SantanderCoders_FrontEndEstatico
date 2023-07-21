@@ -1,0 +1,45 @@
+<!-- 
+  SEO
+    - Rankeamento de sites pelo robo do Google.
+      - política -> https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=pt-br
+    - Tem que pensar que o Google tem o interesse de mostrar os melhores sites para quem está buscando. Se fosse ao contrário, o usuário do Google entraria em varios sites ruins e, em algum momento, esse usuário iria parar de usar o Google.
+    - LightHouse -> do Google Chrome, em inspecionar, para mostrar questões de acessibilidade, que ajuda no ranking,
+    - Acessibilidade é um ponto importante.
+      - Existem muitas pessoas com deficiência que dependem de um website acessível para ter uma boa experiência. Por isso o google rankeia mal um website que tenha uma acessibilidade ruim.
+      - Como testar acessibilidade? Testar com leitor de tela.
+    - Performance também é importante, pois os usuários, no geral, preferem sistemas mais rápido.
+    - Se o site estiver público, o Gogle vai acessar. Tem que configurar para que não apareça, caso isso seja desejado.
+
+  Acessibilidade
+    - Leitores de tela
+      - NVDA - https://www.nvaccess.org/download/
+      - Leitor de tela integrado no chrome (screen reader)
+ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO / Acessibilidade</title>
+</head>
+
+<body>
+
+  <button id="btnEnviar" aria-label="Botão para envio de formulário">
+    Enviar
+  </button>
+
+  <script>
+    const botaoDeEnvio = document.querySelector('#btnEnviar');
+    botaoDeEnvio.addEventListener('click', () => {
+      const ehTextoDeReenvio = botaoDeEnvio.getAttribute('aria-label') === "Botão para reenvio de formulário";
+      if (ehTextoDeReenvio)  return;
+
+      botaoDeEnvio.setAttribute('aria-label', 'Botão para reenvio de formulário');
+    })
+  </script>
+</body>
+
+</html>
