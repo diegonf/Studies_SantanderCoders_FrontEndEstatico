@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    p+p {
+      color: blue;
+    }
+    /* pega o p imediatamente após um p */
+
+    div > p {
+      /* p's filhos diretos de uma div */
+    }
+
+    div p {
+      /* p's filhos de uma div - diretos ou não */
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main>
+    <p>Aqui está o texto do main</p>
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <div></div>
+    <p>Aqui está o texto do main</p>
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+    <p>Aqui está o texto do main</p> <!-- p + p pega esse -->
+  </main>
+
+</body>
+
+</html>

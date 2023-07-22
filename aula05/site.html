@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+</head>
+
+<style>
+  :root {
+    --cor-fundo: #f1f1f1;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 130px;
+  }
+
+  .title {
+    background-color: var(--cor-fundo);
+    font-size: larger;
+    padding: 20px;
+    text-align: center;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  main {
+    margin-top: 140px;
+  }
+
+  nav {
+    background-color: #ddd;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+  }
+
+  a {
+    color: black;
+    padding: 5px;
+    text-decoration: none;
+    transition: 500ms;
+  }
+
+  a:hover {
+    background-color: #fff;
+  }
+
+  section {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  article {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  article p {
+    margin-top: 20px;
+  }
+
+  h2 {
+    margin-top: 20px;
+  }
+
+  footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+  }
+
+  figcaption {
+    display: none;
+  }
+
+  img {
+    width: 64px;
+  }
+
+  section {
+    position: relative;
+    z-index: -1;
+  }
+
+  figure {
+    position: absolute;
+    top: 48px;
+    right: 0;
+  }
+</style>
+
+<body>
+
+  <header>
+    <h1 class="title">Meu Site</h1>
+    <nav>
+      <a href="#react">React</a>
+      <a href="#angular">Angular</a>
+      <a href="#vue">VueJs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="react">React</h2>
+      <article>
+        <h3>Como usar o React</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+        </p>
+      </article>
+      <figure>
+        <img src="./assets/react.png" alt="logo do react">
+        <figcaption>Logo do React</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2 id="angular">Angular</h2>
+      <article>
+        <h3>Como usar o Angular</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+        </p>
+      </article>
+      <figure>
+        <img src="./assets/angular.png" alt="logo do angular">
+        <figcaption>Logo do Angular</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2 id="vue">Vue</h2>
+      <article>
+        <h3>Como usar o Vue</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, consectetur sed nihil voluptatibus illum
+          voluptates eum quia obcaecati, fuga eius, sint quod magnam explicabo esse modi tenetur saepe ratione ducimus!
+        </p>
+      </article>
+      <figure>
+        <img src="./assets/vue.webp" alt="logo do vue">
+        <figcaption>Logo do Vue</figcaption>
+      </figure>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Todos os direitos reservador! Meu Site 2023</p>
+  </footer>
+
+</body>
+
+</html>

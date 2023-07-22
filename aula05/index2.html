@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  th:first-child {
+    background-color: yellow;
+    /* pega o th que é primeiro filho de alguém */
+  }
+
+  td:nth-child(2n+1){
+    color: red;
+    /* 
+      n vai de 0, 1, 2 até infinto
+      os filhos vão de 1, 2, 3 até infinito
+    */
+  }
+
+  button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+  }
+</style>
+<body>
+
+  <table>
+
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Cidade</th>
+    </tr>
+
+    <tr>
+      <td>Diego</td>
+      <td>32</td>
+      <td>Braga</td>
+    </tr>
+
+    <tr>
+      <td>Diego</td>
+      <td>32</td>
+      <td>Braga</td>
+    </tr>
+
+    <tr>
+      <td>Diego</td>
+      <td>32</td>
+      <td>Braga</td>
+    </tr>
+
+  </table>
+  
+  <button>Enviar</button>
+</body>
+</html>
