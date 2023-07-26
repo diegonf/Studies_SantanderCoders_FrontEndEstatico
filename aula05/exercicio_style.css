@@ -1,0 +1,15 @@
+:root {
+  --cinza-forte: rgb(230, 230, 230);
+  --cinza-medio: rgb(247, 247, 247);
+  --cinza-fraco: rgb(250, 250, 250);
+  --bg-verde: #4caf50;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}

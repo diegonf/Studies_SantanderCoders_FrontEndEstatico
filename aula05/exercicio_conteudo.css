@@ -1,0 +1,88 @@
+main {
+  background-color: var(--cinza-medio);
+}
+
+.conteudo {
+  background-color: var(--cinza-fraco);
+  border-radius: 2px;
+  border: 2px solid var(--cinza-forte);
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: calc(100vh - 258px);
+  padding: 0 20px;
+  padding-top: 30px;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+.container h2 {
+  margin-bottom: 20px;
+}
+
+.cardapio__produto{
+  border-bottom: 1px solid var(--cinza-forte);
+  margin-top: 25px;
+  min-height: 100px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.cardapio__produto img {
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+
+.cardapio__produto--descricao {
+  font-size: 110%;
+  height: 100%;
+  margin-left: 110px;
+}
+
+.cardapio__produto--descricao h3 {
+  padding-top: 3px;
+  margin-bottom: 20px;
+}
+
+.tabela{
+  border-collapse: collapse;
+  width: 100%;
+}
+.tabela th {
+  background-color: var(--cinza-forte);
+}
+.tabela td, .tabela th {
+  border: 1px solid var(--cinza-forte);
+  padding: 12px;
+}
+
+
+.formulario {
+  border: 2px solid var(--cinza-forte);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.formulario input, .formulario textarea {
+  background-color: var(--cinza-fraco);
+  border: 3px solid var(--cinza-forte);
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.formulario button {
+  background-color: var(--bg-verde);
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100%;
+}
+
+.formulario textarea {
+  resize: none;
+}
