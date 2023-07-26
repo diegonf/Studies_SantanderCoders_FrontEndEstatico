@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício Aula 06 - Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      color: white;
+    }
+
+    .grid {
+      display: grid;
+      height: 100vh;
+      grid-template-rows: 15% 7.5% 70% 7.5%;
+    }
+
+    .cardapio {
+      align-items: center;
+      background-color: rgb(21, 184, 249);
+      display: flex;
+      font-size: 150%;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .nav {
+      align-items: center;
+      background-color: rgb(92, 247, 103);
+      display: flex;
+      padding: 10px;
+    }
+    .conteudo {
+      display: flex;
+      gap: 10px;
+      padding: 5px;
+    }
+    .conteudo-item {
+      background-color: rgb(252, 198, 99);
+      flex: 1;
+      padding: 5px;
+    }
+    .rodape {
+      align-items: center;
+      background-color: rgb(65, 65, 65);
+      display: flex;
+      padding: 10px; 
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="grid">
+      <div class="cardapio">Cardápio Digital</div>
+      <div class="nav">Barra de Navegação</div>
+      <div class="conteudo">
+        <div class="conteudo-item">Conteúdo I</div>
+        <div class="conteudo-item">Conteúdo II</div>
+      </div>
+      <div class="rodape">Rodapé</div>
+    </div>
+  </main>
+  
+</body>
+</html>
