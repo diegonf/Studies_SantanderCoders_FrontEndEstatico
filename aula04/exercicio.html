@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SEO / Acessibilidade</title>
+</head>
+
+<body>
+
+  <button id="btnEnviar" aria-label="Botão para envio de formulário">
+    Enviar
+  </button>
+
+  <script>
+    const botaoDeEnvio = document.querySelector('#btnEnviar');
+    botaoDeEnvio.addEventListener('click', () => {
+      const ehTextoDeReenvio = botaoDeEnvio.getAttribute('aria-label') === "Botão para reenvio de formulário";
+      if (ehTextoDeReenvio)  return;
+
+      botaoDeEnvio.setAttribute('aria-label', 'Botão para reenvio de formulário');
+    })
+  </script>
+</body>
+
+</html>
